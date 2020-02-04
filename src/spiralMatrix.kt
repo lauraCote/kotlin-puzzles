@@ -3,37 +3,36 @@ fun spiralOrder(matrix: Array<IntArray>): IntArray {
         return IntArray(0)
     }
 
-    if (matrix.size == 1) {
-        return matrix.first()
-    }
+    var spiralArray = IntArray(matrix.size * matrix[0].size)
 
-    var yLength = matrix.size
-    var xLength = matrix[0].size
-    var spiralArray = IntArray(xLength * yLength)
+    var yLength = matrix.size - 1
+    var xLength = matrix[0].size - 1
     var spiralIndex = 0
     var startXIndex = 0
     var startYIndex = 0
 
-    while ((xLength - startXIndex) > 0 && (yLength - startYIndex) > 0) {
+    while (startXIndex <= xLength && startYIndex <= yLength) {
 
-        for (x in startXIndex until xLength) {
+        for (x in startXIndex .. xLength) {
             spiralArray[spiralIndex] = matrix[startYIndex][x]
             spiralIndex++
         }
 
-        for (y in startYIndex + 1 until yLength) {
-            spiralArray[spiralIndex] = matrix[y][xLength - 1]
+        for (y in startYIndex + 1 .. yLength) {
+            spiralArray[spiralIndex] = matrix[y][xLength]
             spiralIndex++
         }
 
-        for (x in (xLength - 2) downTo startXIndex) {
-            spiralArray[spiralIndex] = matrix[yLength - 1][x]
-            spiralIndex++
-        }
+        if (startXIndex < xLength && startYIndex < yLength) {
+            for (x in (xLength - 1) downTo startXIndex) {
+                spiralArray[spiralIndex] = matrix[yLength][x]
+                spiralIndex++
+            }
 
-        for (y in (yLength - 2) downTo startYIndex + 1) {
-            spiralArray[spiralIndex] = matrix[y][startXIndex]
-            spiralIndex++
+            for (y in (yLength - 1) downTo startYIndex + 1) {
+                spiralArray[spiralIndex] = matrix[y][startXIndex]
+                spiralIndex++
+            }
         }
 
         xLength -= 1
