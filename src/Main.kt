@@ -7,4 +7,8 @@ fun main(args: Array<String>) {
     validateMaxArea()
 
     validateGameOfLife()
+
+    validatePalindromePermutation()
+
+    validateNumberOfEdits()
 }
