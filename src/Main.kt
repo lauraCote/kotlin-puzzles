@@ -11,4 +11,6 @@ fun main(args: Array<String>) {
     validatePalindromePermutation()
 
     validateNumberOfEdits()
+
+    validateFirstMissingPositive()
 }

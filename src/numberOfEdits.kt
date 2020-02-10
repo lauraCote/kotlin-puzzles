@@ -1,4 +1,3 @@
-import java.lang.Integer.min
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
