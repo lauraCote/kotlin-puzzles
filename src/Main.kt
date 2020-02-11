@@ -13,4 +13,8 @@ fun main(args: Array<String>) {
     validateNumberOfEdits()
 
     validateFirstMissingPositive()
+
+    validateCompressString()
+
+    validateLongestConsecutive()
 }
