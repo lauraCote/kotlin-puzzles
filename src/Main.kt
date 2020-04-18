@@ -1,20 +1,49 @@
 
+class ListNode(var `val`: Int) {
+    var next: ListNode? = null
+}
 
 fun main(args: Array<String>) {
 
-    validateURLify()
+//    validateURLify()
+//
+//    validateMaxArea()
+//
+//    validateGameOfLife()
+//
+//    validatePalindromePermutation()
+//
+//    validateNumberOfEdits()
+//
+//    validateFirstMissingPositive()
+//
+//    validateCompressString()
+//
+//    validateLongestConsecutive()
+//
+//    validateFindDuplicate()
+//
+//    validateRotateMatrix()
 
-    validateMaxArea()
+//    validateZeroMatrix()
 
-    validateGameOfLife()
+//    validateRemoveDuplicates()
 
-    validatePalindromePermutation()
+//    validateRemoveNthFromEnd()
 
-    validateNumberOfEdits()
+//    validateReversedList()
 
-    validateFirstMissingPositive()
+//    validateMergeTwoLists()
 
-    validateCompressString()
+//    validateSwapPairs()
 
-    validateLongestConsecutive()
+//    validateSingleNumber()
+
+//    validateMaxSubArray()
+
+//    validateGroupAnagrams()
+
+//    validateCountElements()
+
+    validateMiddleNode()
 }
