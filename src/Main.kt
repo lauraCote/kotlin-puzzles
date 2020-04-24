@@ -45,5 +45,9 @@ fun main(args: Array<String>) {
 
 //    validateCountElements()
 
-    validateMiddleNode()
+//    validateMiddleNode()
+
+//    validateFindMaxLength()
+
+    validateCheckValidString()
 }
